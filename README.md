@@ -13,12 +13,14 @@
 pip install -e git+https://user@gitrepo.com/user/package.git#egg=package
 
 ### Project layout
+```
 MANIFEST.in # Describe non-Python files to include in distribution
 README.md # Just good practice!
 setup.py # Defines package info
 package_name/
-    __init__.py
-    file.py
+  __init__.py
+  file.py
+```
 
 ### Sample setup.py
 ```python
