@@ -7,6 +7,8 @@
 4. Use `python setup.py register` to publish package info (will prompt for un/pw)
 5. Use `python setup.py sdist upload` to create a download file, and push to Pypi
 
+> Register command is used to create the initial package, as well as send updates. By default the Pypi page will only show the latest package info, however this can be amended within the web interface.
+
 ### Testing install
 pip install -e git+https://user@gitrepo.com/user/package.git#egg=package
 
@@ -19,7 +21,7 @@ package_name/
     file.py
 
 ### Sample setup.py
-```
+```python
 from setuptools import setup, find_packages
 import os
 import django_mock as app
@@ -51,5 +53,3 @@ setup(
     test_suite='run tests.main',
 )
 
-### Notes
-Register command is used to create the initial package, as well as send updates. By default the Pypi page will only show the latest package info, however this can be amended within the web interface.
