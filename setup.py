@@ -15,8 +15,8 @@ setup(
     description="My test package",
     # Long desc will display on the PyPi page
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
-    url="www.package-website.com",
-    download_url="https://gitrepo.com/user/package/downloads/tar_file.tar.gz",
+    url="https://github.com/CptLemming/django-mock",
+    download_url="https://github.com/CptLemming/django-mock/archive/master.zip",
     license="BSD",
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
@@ -25,6 +25,6 @@ setup(
     ],
     packages=find_packages(exclude=["project", "project.*"]),
     include_package_data=True,
-    zip_safe=False,
+    zip_safe=True,
     test_suite='run tests.main',
 )
