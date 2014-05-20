@@ -1,2 +1,3 @@
-django_mock.egg-info
+pip_mockup.egg-info
 dist
+*.pyc

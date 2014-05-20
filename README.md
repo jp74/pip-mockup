@@ -10,7 +10,7 @@
 > Register command is used to create the initial package, as well as send updates. By default the Pypi page will only show the latest package info, however this can be amended within the web interface.
 
 ### Testing install
-pip install -e git+https://user@gitrepo.com/user/package.git#egg=package
+pip install -e git+https://user@gitrepo.com/user/package_name.git#egg=package_name
 
 ### Project layout
 ```
@@ -26,7 +26,7 @@ package_name/
 ```python
 from setuptools import setup, find_packages
 import os
-import django_mock as app
+import pip_mockup as app
 
 
 CLASSIFIERS = [
@@ -34,15 +34,15 @@ CLASSIFIERS = [
 ]
 
 setup(
-    author="Ashley Wilson",
-    author_email="ash@jp74.com",
-    name="django_mock",
+    author="User goes here",
+    author_email="mockup@sample.com",
+    name="pip_mockup",
     version=app.__version__,
     description="My test package",
     # Long desc will display on the PyPi page
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.md')).read(),
-    url="https://github.com/JP74/django-mock",
-    download_url="https://github.com/JP74/django-mock/archive/master.zip",
+    url="https://github.com/JP74/pip-mockup",
+    download_url="https://github.com/JP74/pip-mockup/archive/master.zip",
     license="BSD",
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
