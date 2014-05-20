@@ -10,7 +10,7 @@ CLASSIFIERS = [
 setup(
     author="Ashley Wilson",
     author_email="ash@jp74.com",
-    name="django-mock",
+    name="django_mock",
     version=app.__version__,
     description="My test package",
     # Long desc will display on the PyPi page
@@ -28,3 +28,5 @@ setup(
     zip_safe=True,
     test_suite='run tests.main',
 )
+
+# pip install -e git+https://github.com/CptLemming/django-mock.git#egg=django_mock
