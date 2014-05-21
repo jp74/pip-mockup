@@ -1,3 +1,5 @@
+[![Build Status](https://drone.io/github.com/jp74/pip-mockup/status.png)](https://drone.io/github.com/jp74/pip-mockup/latest)
+
 ## Sample Instructions for package development
 
 ### Create and upload package
